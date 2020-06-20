@@ -1,0 +1,17 @@
+{
+  "name": "recife-koa",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/koa__router": "^8.0.2",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@koa/router": "^9.0.1",
+    "apollo-server-koa": "^2.15.0"
+  }
+}
