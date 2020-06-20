@@ -1,4 +1,4 @@
-<img alt="RecifeJs" width="200" src="https://raw.githubusercontent.com/recifejs/recife/master/logo.png" />
+<img alt="RecifeJs" width="400" src="https://raw.githubusercontent.com/recifejs/recife/master/logo.png" />
 
 [![npm version](https://img.shields.io/npm/v/recife-koa?style=flat-square&logo=npm)](https://www.npmjs.com/package/recife-koa) [![License: MIT](https://img.shields.io/github/license/recifejs/koa?style=flat-square)](https://github.com/recifejs/koa/blob/master/LICENSE) [![Node.js CI](https://img.shields.io/github/workflow/status/recifejs/koa/Node.js%20CI?style=flat-square&logo=github)](https://github.com/recifejs/koa/workflows/Node.js%20CI)
 
