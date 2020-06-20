@@ -9,7 +9,7 @@ type CreateMiddlewareParams = {
   typeDefs: DocumentNode;
   resolvers: IResolvers;
   context: Context;
-  apolloConfig: Config;
+  graphqlConfig: Config;
 };
 
 type ListenParams = {
@@ -39,10 +39,10 @@ class RecifeKoa {
     typeDefs,
     resolvers,
     context,
-    apolloConfig
+    graphqlConfig
   }: CreateMiddlewareParams): ApolloServerBase {
     const apolloServer = new ApolloServer({
-      ...apolloConfig,
+      ...graphqlConfig,
       resolvers,
       typeDefs,
       context
