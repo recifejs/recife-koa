@@ -1,4 +1,6 @@
 import Koa from 'koa';
+import koaBody from 'koa-bodyparser';
+import koaCors from '@koa/cors';
 import Router, { RouterContext } from '@koa/router';
 import { ApolloServer, IResolvers } from 'apollo-server-koa';
 import { ApolloServerBase, Context, Config } from 'apollo-server-core';
@@ -22,10 +24,10 @@ class RecifeKoa {
   router = new Router();
 
   constructor(bodyParser: any, cors: any, homepage: string) {
-    this.app.use(bodyParser);
+    this.app.use(koaBody(bodyParser));
 
     if (cors) {
-      this.app.use(cors);
+      this.app.use(koaCors(cors));
     }
 
     this.router.get('/', (ctx: RouterContext) => {
