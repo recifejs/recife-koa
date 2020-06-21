@@ -26,7 +26,7 @@ class RecifeKoa {
   constructor(bodyParser: any, cors: any, homepage: string) {
     this.app.use(koaBody(bodyParser));
 
-    if (cors) {
+    if (cors && cors.enabled) {
       this.app.use(koaCors(cors));
     }
 
