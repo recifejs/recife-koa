@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/recife-koa?style=flat-square&logo=npm)](https://www.npmjs.com/package/recife-koa) [![License: MIT](https://img.shields.io/github/license/recifejs/recife-koa?style=flat-square)](https://github.com/recifejs/recife-koa/blob/master/LICENSE) [![Node.js CI](https://img.shields.io/github/workflow/status/recifejs/recife-koa/Node.js%20CI?style=flat-square&logo=github)](https://github.com/recifejs/recife-koa/workflows/Node.js%20CI)
 
-Recife Koa is a integration of recifejs with [koa](https://koajs.com/). For more details access the [documentation](https://koajs.com/).
+Recife Koa is a integration of recifejs with [koa](https://koajs.com/). For more details access the [documentation](https://recifejs.org/).
 
 ## Install
 
