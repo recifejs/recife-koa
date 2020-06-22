@@ -10,7 +10,7 @@ import { Server } from 'http';
 type CreateMiddlewareParams = {
   typeDefs: DocumentNode;
   resolvers: IResolvers;
-  context: Context;
+  context: (request: any) => Context;
   graphqlConfig: Config;
 };
 
@@ -47,7 +47,12 @@ class RecifeKoa {
       ...graphqlConfig,
       resolvers,
       typeDefs,
-      context
+      context: ({ ctx }: Koa.Context) =>
+        context({
+          method: ctx.request.method,
+          url: ctx.request.url,
+          header: ctx.request.header
+        })
     });
 
     apolloServer.applyMiddleware({ app: this.app });
